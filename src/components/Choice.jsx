@@ -63,7 +63,7 @@ export default function Choice({location}) {
     function onClickNext() {
         const API_URL = "http://localhost:8080/api/activity";
         //location.coords.longitude
-        const url = `${API_URL}?latitude=${48.864716}&longitude=${2.349014}`;
+        const url = `${API_URL}?latitude=${location.coords.latitude}&longitude=${location.coords.longitude}`;
 
         setLoadingActivity(true);
 
