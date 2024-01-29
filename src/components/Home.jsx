@@ -14,7 +14,7 @@ export default function Home(){
     }, []);
 
     if (location)
-        return <Choice localisation={location}/>
+        return <Choice location={location}/>
     else
         return(
             <>
